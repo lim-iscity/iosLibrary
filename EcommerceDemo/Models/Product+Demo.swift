@@ -1,7 +1,7 @@
 import UIKit
 
 extension Product {
-    static let demos: [Product] = [.oculus, .surface, .xbox]
+    public static let demos: [Product] = [.oculus, .surface, .xbox]
     static let oculus = Product(
         name: "Oculus Rift",
         price: "$1 299",

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0B87F72306977F0089938C /* EcommerceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B87F62306977F0089938C /* EcommerceViewController.swift */; };
 		3A1509F12306594900FBF392 /* KnobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1509F02306594900FBF392 /* KnobViewController.swift */; };
 		3A8DE4B023063A6A004D85B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DE4AF23063A6A004D85B7 /* AppDelegate.swift */; };
 		3A8DE4B223063A6A004D85B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DE4B123063A6A004D85B7 /* ViewController.swift */; };
@@ -145,6 +146,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A0B87F62306977F0089938C /* EcommerceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceViewController.swift; sourceTree = "<group>"; };
 		3A1509F02306594900FBF392 /* KnobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobViewController.swift; sourceTree = "<group>"; };
 		3A8DE4AC23063A6A004D85B7 /* iosLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8DE4AF23063A6A004D85B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 		3A1509F42306924100FBF392 /* Ecommerce */ = {
 			isa = PBXGroup;
 			children = (
+				3A0B87F62306977F0089938C /* EcommerceViewController.swift */,
 			);
 			path = Ecommerce;
 			sourceTree = "<group>";
@@ -862,6 +865,7 @@
 				3A8DE6AC2306441D004D85B7 /* NMOutlineView.swift in Sources */,
 				3A1509F12306594900FBF392 /* KnobViewController.swift in Sources */,
 				3A8DE6A523064301004D85B7 /* main.swift in Sources */,
+				3A0B87F72306977F0089938C /* EcommerceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

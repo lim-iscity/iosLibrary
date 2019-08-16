@@ -1,6 +1,6 @@
 import UIKit
 
-struct Product {
+public struct Product {
     struct Spec {
         let name: String
         let value: String

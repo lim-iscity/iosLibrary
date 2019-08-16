@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import EcommerceDemo
 
 class ViewController: UIViewController {
     var datasource: [TreeNode<[String: Any]>]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         setupData()
         setupView()
     }
@@ -23,9 +23,13 @@ class ViewController: UIViewController {
         let knob = TreeNode<[String: Any]>(value: ["name": "Knob Control", "controller": KnobViewController.self])
         uiNode.addChild(knob)
         
+        let ecommerce = TreeNode<[String: Any]>(value: ["name": "ecommerce Showcase"])
+        let ecommerceDemo = TreeNode<[String: Any]>(value: ["name": "ecommerce demo", "controller": EcommerceViewController.self])
+        
         ecommerce.addChild(ecommerceDemo)
         datasource = [
             uiNode,
+            ecommerce
         ]
     }
 
@@ -110,10 +114,8 @@ extension ViewController: NMOutlineViewDatasource {
             cell.updateState(!cell.isExpanded, animated: true)
         }
         if let controller = nodeValue["controller"] as? UIViewController.Type {
-            navigationController?.navigationBar.isHidden = false
             navigationController?.pushViewController(controller.init(), animated: true)
         } else if let controller = nodeValue["controller"] as? UIViewController {
-            navigationController?.navigationBar.isHidden = false
             navigationController?.pushViewController(controller, animated: true)
         }
     }
