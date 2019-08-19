@@ -34,7 +34,8 @@ class EcommerceViewController: UIViewController {
             let font = CGFont(fontDataProvider)!
             var error: Unmanaged<CFError>?
             guard CTFontManagerRegisterGraphicsFont(font, &error) else {
-                fatalError("Could not register font from url \(url), error: \(error!.takeUnretainedValue())")
+                print("Could not register font from url \(url), error: \(error!.takeUnretainedValue())")
+                return
             }
         }
     }

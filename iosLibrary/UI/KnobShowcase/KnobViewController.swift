@@ -29,11 +29,6 @@ class KnobViewController: UIViewController {
         return view
     }()
     
-    let animateSwitch: UISwitch = {
-        let view = UISwitch()
-        return view
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -48,11 +43,9 @@ class KnobViewController: UIViewController {
         view.addSubview(knob)
         view.addSubview(valueLabel)
         view.addSubview(valueSlider)
-        view.addSubview(animateSwitch)
         knob.translatesAutoresizingMaskIntoConstraints = false
         valueLabel.translatesAutoresizingMaskIntoConstraints = false
         valueSlider.translatesAutoresizingMaskIntoConstraints = false
-        animateSwitch.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             knob.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
             knob.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
