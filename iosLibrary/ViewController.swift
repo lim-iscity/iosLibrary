@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireDemo
 
 class ViewController: UIViewController {
     var datasource: [TreeNode<[String: Any]>]?
@@ -25,11 +26,16 @@ class ViewController: UIViewController {
         
         let ecommerce = TreeNode<[String: Any]>(value: ["name": "ecommerce Showcase"])
         let ecommerceDemo = TreeNode<[String: Any]>(value: ["name": "ecommerce demo", "controller": EcommerceViewController.self])
-        
         ecommerce.addChild(ecommerceDemo)
+        
+        let network = TreeNode<[String: Any]>(value: ["name": "Network"])
+        let alamofire = TreeNode<[String: Any]>(value: ["name": "Alamofire", "controller": AlamofireViewController.self])
+        network.addChild(alamofire)
+        
         datasource = [
             uiNode,
-            ecommerce
+            ecommerce,
+            network
         ]
     }
 

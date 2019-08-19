@@ -87,6 +87,12 @@
 		3AA9D7B5230AAAC400CB64CF /* AlamofireDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA9D7AE230AAAC400CB64CF /* AlamofireDemo.framework */; };
 		3AA9D7B6230AAAC400CB64CF /* AlamofireDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA9D7AE230AAAC400CB64CF /* AlamofireDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AA9D7BD230AABDA00CB64CF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA9D7BC230AABDA00CB64CF /* Alamofire.framework */; };
+		3AA9D7CF230AAD3100CB64CF /* DuckDuckGo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9D7C8230AAD3100CB64CF /* DuckDuckGo.swift */; };
+		3AA9D7D1230AAD3100CB64CF /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9D7CA230AAD3100CB64CF /* DefinitionViewController.swift */; };
+		3AA9D7D2230AAD3100CB64CF /* AlamofireMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA9D7CB230AAD3100CB64CF /* AlamofireMain.storyboard */; };
+		3AA9D7D3230AAD3100CB64CF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9D7CC230AAD3100CB64CF /* SearchViewController.swift */; };
+		3AA9D7D5230AAD3100CB64CF /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9D7CE230AAD3100CB64CF /* RoundedImageView.swift */; };
+		3AA9D7D9230AB69500CB64CF /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9D7D8230AB69500CB64CF /* AlamofireViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +251,12 @@
 		3AA9D7B0230AAAC400CB64CF /* AlamofireDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireDemo.h; sourceTree = "<group>"; };
 		3AA9D7B1230AAAC400CB64CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA9D7BC230AABDA00CB64CF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = AlamofireDemo/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3AA9D7C8230AAD3100CB64CF /* DuckDuckGo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckDuckGo.swift; sourceTree = "<group>"; };
+		3AA9D7CA230AAD3100CB64CF /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		3AA9D7CB230AAD3100CB64CF /* AlamofireMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlamofireMain.storyboard; sourceTree = "<group>"; };
+		3AA9D7CC230AAD3100CB64CF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3AA9D7CE230AAD3100CB64CF /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		3AA9D7D8230AB69500CB64CF /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -640,6 +652,7 @@
 		3AA9D7AF230AAAC400CB64CF /* AlamofireDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3AA9D7C7230AAD1E00CB64CF /* Source */,
 				3AA9D7B0230AAAC400CB64CF /* AlamofireDemo.h */,
 				3AA9D7B1230AAAC400CB64CF /* Info.plist */,
 			);
@@ -652,6 +665,19 @@
 				3AA9D7BC230AABDA00CB64CF /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AA9D7C7230AAD1E00CB64CF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3AA9D7CA230AAD3100CB64CF /* DefinitionViewController.swift */,
+				3AA9D7C8230AAD3100CB64CF /* DuckDuckGo.swift */,
+				3AA9D7CB230AAD3100CB64CF /* AlamofireMain.storyboard */,
+				3AA9D7CE230AAD3100CB64CF /* RoundedImageView.swift */,
+				3AA9D7CC230AAD3100CB64CF /* SearchViewController.swift */,
+				3AA9D7D8230AB69500CB64CF /* AlamofireViewController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -849,6 +875,7 @@
 					};
 					3AA9D7AD230AAAC400CB64CF = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -932,6 +959,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA9D7D2230AAD3100CB64CF /* AlamofireMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1065,6 +1093,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA9D7D5230AAD3100CB64CF /* RoundedImageView.swift in Sources */,
+				3AA9D7D9230AB69500CB64CF /* AlamofireViewController.swift in Sources */,
+				3AA9D7D3230AAD3100CB64CF /* SearchViewController.swift in Sources */,
+				3AA9D7CF230AAD3100CB64CF /* DuckDuckGo.swift in Sources */,
+				3AA9D7D1230AAD3100CB64CF /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1522,6 +1555,7 @@
 		3AA9D7B7230AAAC400CB64CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1536,7 +1570,7 @@
 				);
 				INFOPLIST_FILE = AlamofireDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1545,6 +1579,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.enterprise.AlamofireDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1555,6 +1590,7 @@
 		3AA9D7B8230AAAC400CB64CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1569,7 +1605,7 @@
 				);
 				INFOPLIST_FILE = AlamofireDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
